@@ -3,11 +3,9 @@
 while(true)
 {
     OutputPid();
-}
-
-
-void OutputPid() 
-{
-    Console.WriteLine($"Hello World! {Environment.ProcessId}");
     Thread.Sleep(1000);
 }
+
+
+void OutputPid() => 
+    Console.WriteLine($"Hello World! {Environment.ProcessId}");
